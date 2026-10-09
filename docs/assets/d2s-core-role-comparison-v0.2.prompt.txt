@@ -1,0 +1,46 @@
+Generator: built-in imagegen
+Purpose: Static design review. No application implementation.
+Reference: Previously reviewed CAIDENTIA buyer screen.
+
+Use case: ui-mockup.
+Edit target and style reference: the supplied CAIDENTIA D2S desktop screenshot. Rework it into ONE polished static design review image containing TWO distinct application screenshots side by side: buyer on the left, supplier B on the right. Preserve the approved white/slate, teal, restrained amber, thin-line, clean Korean enterprise interface style. This is a static design proposal, not a working app.
+
+Primary design correction: D2S is the enduring core of this product. The MAIN canvas must visually connect design requirements, BOM/configuration, sourcing alternatives, validation evidence, and selection. Business processes such as technical discussion and quotation negotiation attach to these objects. They are NOT the top-level identity of the product. Do not reuse the original giant shortage gauge or five-step procurement wizard. A clean relationship map is the visual center of each screenshot. Solid connectors represent relationships, not an enforced sequential wizard. The same layout and card positions are used in both screenshots.
+
+Composition: large crisp landscape design review plate, approximately 2880 x 1800, generous margins and large highly readable Korean typography. Neutral light background. Two equally sized desktop app frames filling most of the image; no laptop/device borders or photography. Above frames, short title "D2S 중심 작업 공간". Small subheading "같은 설계·소싱 대상 · 공급사별 개별 협의". Label outside left frame "구매기업", outside right frame "공급사 B". Small top-right tag "정적 시안 · 모의 데이터". Within both app frames brand "CAIDENTIA | D2S". Do not put architecture words such as Core, database, API, security implementation in the app.
+
+Each frame has the same simple structure:
+1) Header and two short contextual rows.
+2) A large central D2S relationship canvas with five columns, the identical column headings in BOTH screens: "요구조건", "BOM·구성", "공급 대안", "검증", "선정". Connect nodes horizontally with subtle teal lines. A subtle amber feedback arc may connect the selected alternative back to the configuration, labeled "변경 검토". This is a relationship canvas, not checked-off stages. Generous open space. Restrained small isometric server illustration in buyer configuration area and a power module illustration in supplier configuration area.
+3) Below the canvas, two horizontally arranged process cards under heading "연결된 업무". Cards have identical process names "기술 협의" and "견적 협의". These are visibly linked to the selected PSU-B node, and not a separate menu page.
+4) Bottom shared conversation panel with a clear recipient pill "구매기업 ↔ 공급사 B". Exactly the same published message appears in both: "PSU-B 400개와 검증 자료를 제출했습니다." No dates or times.
+
+BUYER screen data:
+Header "데이터센터 서버 프로그램".
+Context "BOM R1 · 구성 C1-B" and "RFQ-B-01 v1 · SP-PSU-01 v1".
+Small secondary summary, not dominant: "조달 충족 300 / 500대".
+Requirement node exact text "REQ-PWR-01 v1" and "동일 전원 모듈 2개".
+BOM/config node "전원 모듈" and "C1-B · 검토 중".
+Alternatives column contains two compact cards, A is muted "PSU-A · 승인" and selected B highlighted teal "PSU-B · 후보". B has small text "400개 제안". Only B is selected.
+Validation node "기술·품질 검토" with amber status "검토 중".
+Selection node neutral "선정 대기".
+Technical discussion process card has state "검토 중", next-action button "검토 결과 입력".
+Quotation discussion card has state "제안 접수", button "조건 검토".
+Buyer alone can have a small separate tab "내부 검토" alongside current "공급사 협의", but do not show an internal message in the shared thread.
+
+SUPPLIER B screen data:
+Header "전원 모듈 협업".
+Context "공개된 요청 범위" and EXACTLY matching "RFQ-B-01 v1 · SP-PSU-01 v1".
+Small secondary summary "자사 제안 400개".
+Requirement node "SP-PSU-01 v1" and "동일 전원 모듈 2개".
+BOM/config node "전원 모듈" and "공개된 구성 조건". Only its shared component, no whole-server BOM.
+Alternatives column contains ONLY "PSU-B · 제안" and "400개". No A, no invisible placeholder for A, no other supplier names, activity or counts.
+Validation node "자료 검토" with amber status "검토 중".
+Selection node neutral "선정 대기".
+Technical discussion process card has state "검토 중", button "자료 추가".
+Quotation discussion card has state "제안 접수", button "제안 수정".
+Only the buyer-B shared conversation is present.
+NEVER show 500, 300, 200, A, competitor counts, competitor quotes, buyer internal notes or whole-project totals anywhere inside supplier frame.
+
+Footer outside both frames: "설계 요구와 소싱 결정의 연결을 유지합니다."
+Critical consistency: both screenshots show the SAME PSU-B request and SAME published conversation in the SAME current state. Supplier B's proposal is pending review and not yet committed or selected. No green final approval for B. Buyer has 300/500 parts coverage, not shipment commitment. All data synthetic. Do not invent numerical engineering specifications, names, dates, prices, certification claims, additional navigation or decorative graphs. Correct Korean copy, strong information hierarchy, practical UI, no neon sci-fi effects, no giant KPI wall.

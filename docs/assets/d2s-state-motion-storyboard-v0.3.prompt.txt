@@ -1,0 +1,80 @@
+Generator: built-in imagegen
+Artifact: static four-frame D2S state and motion storyboard; not an implemented or animated interface.
+Reference: d2s-core-role-comparison-v0.2.png
+
+Original prompt
+
+Use case: ui-mockup.
+Edit the supplied CAIDENTIA D2S design-review image into a new static MOTION STORYBOARD with FOUR sequential buyer-screen states in a crisp 2 by 2 grid. This is a picture that specifies intended motion, NOT an animated or working interface. Preserve the approved enterprise visual style: white and pale slate, dark navy Korean typography, teal selected objects and approvals, restrained amber pending/shortage, thin dividers, polished spacing, subtle elevation, a small realistic isometric power supply module icon. Do not use neon science fiction, decorative graphs, giant gauge dashboards, laptop borders, or actual company logos beyond the existing CAIDENTIA brand.
+
+Composition: a large readable landscape board about 2880 x 2048, with title at top, a common D2S relationship strip beneath it, four equal app-detail frames filling most of the area, and tiny intended-motion annotations outside the app frames. Prioritize exact numerical accuracy and readable text over extra details. The four frames are excerpted from the SAME buyer workspace, same selected PSU-B, same BOM R1. No supplier-view panels here. All figures are synthetic.
+
+Exact overall title "D2S · 상태와 모션"
+Subtitle "전원 모듈 대체안 검토 · 구매기업 관점"
+Top-right small label "정적 스토리보드 · 모의 데이터"
+Shared thin relationship strip: five icons and linked labels, "요구조건", "BOM·구성", "공급 대안", "검증", "선정". This is an enduring relationship map, not a progress wizard with numbered steps. Below it small contextual text "목표 500대 · 전원 모듈 2개/대 · A 확약 600개". Keep this short and clear.
+
+Within EVERY frame:
+- small "CAIDENTIA | D2S" header, frame-specific scene title.
+- the SAME selected component "PSU-B" with a small power supply illustration and neat teal selection outline.
+- TWO equally prominent, clearly separated quantities with exact headings "조달 충족" and "선정 승인". These are different facts and must NOT be combined.
+- a consistent compact group of four status badges for configuration, technical, quality, supply.
+- a short next-action row or button.
+Use short text only. Align all repeated UI elements so the changed states can be compared directly.
+
+FRAME 1, top-left:
+Scene title "01 검토 중"
+"조달 충족" = "300 / 500대"
+"선정 승인" = "0 / 500대"
+Four badges: "구성 검토 중", "기술 검토 중", "품질 검토 중", "확약 대기".
+An amber short note "200대분 부족".
+Next-action button "기술·품질 검토".
+Outside-frame motion annotation "선택 강조 · 200ms" and a subtle curved stroke suggesting the selected object draws attention.
+
+FRAME 2, top-right:
+Scene title "02 검토 완료"
+"조달 충족" = "300 / 500대" (CRITICAL: unchanged; approvals alone do not increase supply)
+"선정 승인" = "0 / 500대"
+Four badges: "구성 승인", "기술 승인", "품질 승인", "확약 대기".
+An amber short note "공급 확약 필요".
+Next-action button "확약 확인".
+Outside-frame annotation "승인 배지 전환 · 200ms".
+Approved badges teal, supply still amber.
+
+FRAME 3, bottom-left:
+Scene title "03 확약 확인"
+"조달 충족" = "500 / 500대"
+"선정 승인" = "0 / 500대" (CRITICAL: no automatic selection)
+Four badges: "구성 승인", "기술 승인", "품질 승인", "400개 확약".
+Short neutral note "선정 승인 전".
+Next-action button "선정안 작성".
+Outside-frame annotation "변경 경로 강조 · 500ms".
+A short subtle teal trail around the supply-to-coverage relationship suggests planned motion, while remaining a static image.
+
+FRAME 4, bottom-right:
+Scene title "04 부분 선정"
+"조달 충족" = "450 / 500대"
+"선정 승인" = "450 / 500대"
+Four badges: "구성 승인", "기술 승인", "품질 승인", "가용 300개".
+Amber note in a clear but restrained bar "50대분 부족 · 후속 조달 필요".
+Short explanatory text "B 100개는 다른 프로젝트에 배분".
+Short selection line "A 600개 + B 300개 선정".
+Next-action button "잔여 물량 조달" with small owner text "구매 담당자".
+Outside-frame annotation "잔여 부족분 강조 · 1회".
+IMPORTANT: this scenario includes confirmed valid commercial conditions for B's 300 units and a HUMAN partial selection approval. Do not label the whole project complete. Do not show 500 selected here.
+
+Footer exact text "조달 충족과 선정 승인을 각각 관리합니다."
+An optional tiny footer tag "모션 감소 시에도 같은 정보 제공".
+
+Avoid invented engineering specifications, prices, timestamps, new company names, supplier A/B combinations that conflict with the supplied quantities, progress percentages, completion confetti, long paragraphs, unauthorized internal implementation details, or a fake video playback button. The most important outcome is a legible beautiful storyboard showing 300 -> 300 -> 500 -> 450 for coverage, and 0 -> 0 -> 0 -> 450 for selected quantities. Use plain Korean labels exactly as supplied.
+
+Correction prompt
+
+Use case: precise-object-edit.
+Edit the supplied Korean D2S static storyboard. Preserve its exact 2x2 layout, typography, colors, all metrics, title, icons, annotations, top strip, all other text and all panel positions. Make ONLY these small factual label corrections:
+1. In the BOTTOM-LEFT frame titled "03 확약 확인", the quality status badge currently says "품질 검토". Replace that badge text with exactly "품질 승인". Keep the badge teal. All three configuration/technical/quality statuses in this frame must be APPROVED, because 500 units of server coverage are shown.
+2. In that same BOTTOM-LEFT frame's PSU-B selected component card, replace the small blue badge "후보" with "확약", and replace the line "400개 제안" with exactly "400개 확약".
+3. In the BOTTOM-RIGHT frame titled "04 부분 선정", within its PSU-B selected component card, replace the small blue badge "후보" with exactly "부분 선정", and replace "400개 제안" with exactly "300개 선정". Preserve the separate supply status "가용 300개".
+Do NOT change any quantities in the metric tiles: the four frames must remain coverage 300/500, 300/500, 500/500, 450/500 and selected 0/500, 0/500, 0/500, 450/500.
+The TOP-LEFT and TOP-RIGHT PSU-B cards must still say "후보" and "400개 제안". The bottom-right explanatory text about B 100 units allocated to another project must remain unchanged.
+No other edits. Exact Korean text, clean readable enterprise UI.
